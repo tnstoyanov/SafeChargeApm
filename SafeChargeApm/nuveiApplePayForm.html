@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Nuvei Apple Pay Form</title>
+    <!--
+        <script src="https://cdn.safecharge.com/safecharge_resources/v1/sc_applepay.min.js"></script>
+    -->
+</head>
+<body onload="document.applePay.submit()">
+    <form name="applePay" method="POST" action="https://ppp-test.safecharge.com/ppp/api/v1/payment.do">
+        <input type="hidden" name="merchant_id" value="4914223691328304580">
+        <input type="hidden" name="namerchant_site_idme" value="187539" />
+        <input type="hidden" name="time_stamp" value="2021-04-2911:45:36" />
+        <input type="hidden" name="currency" value="INR" />
+        <input type="hidden" name="merchantLocale" value="en_US" />
+        <input type="hidden" name="userid" value="1234567" />
+        <input type="hidden" name="namerchant_unique_id" value="202104291145367654321" />
+        <input type="hidden" name="item_name_1" value="Test deposit" />
+        <input type="hidden" name="item_number_1" value="1" />
+        <input type="hidden" name="item_amount_1" value="2" />
+        <input type="hidden" name="item_quantity_1" value="1" />
+        <input type="hidden" name="total_amount" value="2" />
+        <input type="hidden" name="user_token_id" value="7654321" />
+        <input type="hidden" name="first_name" value="Tony" />
+        <input type="hidden" name="last_name" value="Stoyanov" />
+        <input type="hidden" name="email" value="integration@tiebreak.solutions" />
+        <input type="hidden" name="city" value="Mumbai" />
+        <input type="hidden" name="country" value="IN" />
+        <input type="hidden" name="address1" value="11 Abdulrahman Ave" />
+        <input type="hidden" name="zip" value="1000" />
+        <input type="hidden" name="phone1" value="359888123456" />
+        <input type="hidden" name="version" value="4.0.0" />
+        <input type="hidden" name="notify_url" value="https://db46a064326442f75c6172ae6772049a.m.pipedream.net" />
+        <input type="hidden" name="success_url" value="https://tnstoyanov.wixsite.com/payment-response" />
+        <input type="hidden" name="error_url" value="https://tnstoyanov.wixsite.com/payment-response/failed" />
+        <input type="hidden" name="pending_url" value="https://tnstoyanov.wixsite.com/payment-response/pending" />
+        <input type="hidden" name="back_url" value="https://tnstoyanov.wixsite.com/payment-response/cancel" />
+        <input type="hidden" name="checksum" value="a12fcc2190782d4a9f424386a0bec15fe41891e064755f35c4f220cb787ca834" />
+    </form>
+</body>
+</html>
